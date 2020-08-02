@@ -1,24 +1,32 @@
-# EasyNotes Application
+### Without Docker
+npm i
 
-Build a Restful CRUD API for a simple Note-Taking application using Node.js, Express and MongoDB.
+npm start
 
-## Steps to Setup
+CRUD:
 
-1. Install dependencies
+POST: http://localhost:8080/notes/
 
-```bash
-npm install
-```
+Body: {
+	"title": "test",
+	"content": "test1"
+}
 
-2. Run Server
+GET: http://localhost:8080/notes/
 
-```bash
-node server.js
-```
+PUT: http://localhost:8080/notes/{id}
 
-You can browse the apis at <http://localhost:3000>
+DELETE: http://localhost:8080/notes/{id
 
-## Tutorial
-You can find the tutorial for this application at [The CalliCoder Blog](https://www.callicoder.com) - 
+### With Docker
+npm i
 
-<https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/>
+Build Image (on VS Code, right click on 'Dockerfile' and select 'Build Image')
+
+Start Docker-compose: docker-compose -f "docker-compose.yaml" up -d --build
+
+Stop Docker-compose: docker-compose down
+
+CRUD: Same as above
+
+Reference: https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/
