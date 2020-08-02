@@ -1,4 +1,6 @@
 ### Without Docker
+Update local/cloud Mongodb link in the file: database.config.js
+
 npm i
 
 npm start
@@ -19,6 +21,8 @@ PUT: http://localhost:8080/notes/{id}
 DELETE: http://localhost:8080/notes/{id
 
 ### With Docker
+Update docker Mongodb link in the file: database.config.js
+
 npm i
 
 Build Image (on VS Code, right click on 'Dockerfile' and select 'Build Image')
