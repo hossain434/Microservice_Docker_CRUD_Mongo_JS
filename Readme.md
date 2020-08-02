@@ -27,6 +27,8 @@ Start Docker-compose: docker-compose -f "docker-compose.yaml" up -d --build
 
 Stop Docker-compose: docker-compose down
 
+Restart Docker-compose: docker-compose restart
+
 CRUD: Same as above
 
 Reference: https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/
